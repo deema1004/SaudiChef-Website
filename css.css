@@ -423,9 +423,9 @@ footer {
 .row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-content: space-between;
+    padding: 30px;
+    margin-left: 20px;
 
 }
 
@@ -440,6 +440,103 @@ footer {
     text-align: center;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    margin: 20px;
+    
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+ .card:hover{
+    transform: translateY(-4px);
+ }
+
  
+  #buttonS {
+    width: 55px;
+    height: 30px;
+    display: inline-block;
+    padding: 10px 15px 10px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #83acf6;
+    border: none;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  
+  #buttonS:hover {background-color: #6171ee}
+  
+  #buttonS:active {
+    background-color: #6171ee;
+    transform: translateY(4px);
+  }
+
+
+
+
+
+
+  
+
+.header-search {
+    
+    width: 295px;
+    height: 40px;
+    background: #f5f5f5;
+    text-align: left;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/*
+.header-search-btn {
+width: 24px;
+height: 25px;
+display: inline-block;
+background-size: 100% 100%;
+vertical-align: middle;
+}
+  */
+.header-search input {
+    width: 195px;
+    height: 40px;
+    background: none;
+    border: none;
+    display: flex;
+    color: #999;
+    font-size: 14px;
+    text-align: left;
+    outline: #fff;
+}
 
 
