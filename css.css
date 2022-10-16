@@ -1,0 +1,445 @@
+
+    
+  
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.active{
+        background-color: wheat;
+    color: white;
+}
+/* Responsive HOMEPAGE */
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'popons', sans-serif;
+    background-color: wheat;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+footer {
+    background-color: #f37b27;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3em;
+    width: 100%;
+    Height: auto;
+    padding: 0%;
+    margin: 0%
+}
+
+.header {
+    height: 90vh;
+    position: relative;
+}
+
+.navbar {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    background-color: wheat;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+    position: fixed;
+}
+
+.navbar-box img {
+    margin: .5rem;
+    height : 80px;
+    width: 90px;
+    padding: 0;
+    float: left;
+}
+
+
+.navbar-list {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+    font-size: 2rem;
+}
+
+
+.navbar-list ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.navbar-item {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+.navbar-link:visited,
+.navbar-link:link {
+    text-decoration: none;
+    color:white;
+    padding: 1rem;
+    display: block;
+    transition: all .2s ease;
+}
+
+.navbar-link:hover {
+    background-color: #da6b1d;
+    color: white;
+}
+
+.navbar-link-book:visited,
+.navbar-link-book:link {
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3.5rem;
+    border: 1px solid #da6b1d;
+    border-radius: 200px;
+    box-shadow: 0 0 1rem rgba(236, 118, 40, .5);
+    text-shadow: 0 .3rem 1rem rgba(255,255,255, .5);
+    transition: all .4s ease;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.header-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+     }
+
+.heading-primary {
+    font-size: 6.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* id for "sushi"*/
+#sushi {
+    color: #da6b1d;
+    font-weight: 800;
+    font-size: 8rem;
+}
+
+.container h1 {
+    text-align: center;
+    color: #da6b1d ;
+    font-size: xx-large;
+}
+
+
+.about-us {
+    background: url(../images/kabsaing.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: wheat;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: wheat;
+    padding: 130px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: oblique;
+    color: #da6b1d;
+}
+
+
+.text{
+    font-size: 15px;
+    color: #da6b1d;
+    line-height: 30px;
+    text-align: justify;
+    font-style: oblique;
+    margin-bottom: 40px;
+}
+
+.text-bottom{
+    font-size: 1em;
+    display: block;
+    text-align: center;
+}
+
+/* Responsive NAVBAR */
+
+@media (max-width: 858px){
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-list {
+        display: none;
+        width: 100%;
+        background-color: wheat;
+    }
+
+    .navbar-list ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-list ul li {
+        text-align: center;
+    }
+
+    .navbar-list ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .img-area1{
+        width: 100%;
+    }
+    
+    .img-area2{
+        width: 100%;
+    }
+
+    .map-wrapper{
+        width: 100%;
+    }
+}
+
+/* Responsive NAVBAR */
+/*
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 959px){
+    .navbar-box img{
+        font-size: 50px;
+     
+    }
+
+    .navbar-link{
+        font-size: 18px;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .img-area1{
+        width: 100%;
+    }
+    
+    .img-area2{
+        width: 100%;
+    }
+
+    .map-wrapper{
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 858px){
+    .checkbtn{
+        display: block;
+        float: right;
+    }
+
+    .navbar-box img{
+        height : 80px;
+        width: 90px;
+        padding: left 5%;
+        float: left;
+    }
+
+    .navbar-list{
+        position: fixed;
+        width: 100%;
+        height: 100hvh;
+        background:rgb(14, 14, 14);
+        top: 80px;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+
+    .navbar-item{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    .navbar-link{
+        font-size: 20px;
+    }
+
+    a:hover{
+        background: none;
+        color: #da6b1d;
+    }
+
+    #check:checked ~ navbar-list{
+        left: 100;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .img-area1{
+        width: 100%;
+    }
+    
+    .img-area2{
+        width: 100%;
+    }
+
+    .map-wrapper{
+        width: 100%;
+    }
+}
+*/
+
+/* END OF Responsive NAVBAR */
+
+
+
+
+
+
+/* Responsive about-us */
+
+@media screen and (max-width: 959px){
+    .inner-container{
+        padding: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .about-us{
+        background-size: 300px;
+        padding: 200px 70px;
+    }
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+ @media screen and (max-width: 600px){
+    .about-us{
+        padding: 0;
+     }
+    .inner-container{
+        padding: 60px;
+    }
+        
+}
+
+/* END OF Responsive about-us */
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.section-title {
+    font-family: 'popons', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    color: #da6b1d;
+    text-align: center;
+}
+
+ 
+
+
