@@ -1,0 +1,170 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Magloba </title>
+    <link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/mealview.css">
+   
+
+</head>
+<body id='body'>
+<script src="searchbar.js"></script>
+    <section class="header">
+        <nav class="navbar">
+
+            <div class="navbar-box">
+                <img src="images/logo1.PNG" alt="logo">
+            </div>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="navbar-list">
+                <ul>
+                    <li class="navbar-item active"> <a class="navbar-link" href="Homepage.html">Home</a> </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="Shop.html">Shop</a></li>
+                    <li class="navbar-item"> <a class="navbar-link" href="html">Cart</a> </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="adminlogin.html">Log in</a> </li>
+                    <li class="navbar-item"> <div class="header-search"> <input type="text" class="header-search input" placeholder="Search..." id="search-item" onkeyup="search()"> </div></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div>
+            <div class="video">
+                <video loop muted autoplay id="video">
+                    <source src="images/video.mp4" type="video/mp4">
+                    This file type is not supported
+                </video>
+            </div>
+
+            <div class="header-box">
+                <h1 class="heading-primary">
+                    Prepare <br> <span id="sushi">FRESH </span> <br> meals in home
+                </h1>
+
+            </div>
+        </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="section-title">
+
+        <h2>Magloba</h2>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+			<div class ="imagepos">
+            <img src="images/magloba.jpg" alt="magloba" style="width:250px; height: 200px;">
+			
+			</div>
+			
+			<div class ="textstyle">
+			<dl>
+			<dt> Dish Details </dt>
+			<dd><br>  a layered dish that is served by flipping upside down to reveal layers of vegetables (commonly eggplant, potato and cauliflower).
+    </dd>
+			<dt> Reciepe </dt>
+			<dd> <br>  Heat ½ inch of oil in a large skillet over medium-high heat until shimmering hot, then fry the carrots, in batches if necessary, turning occasionally until browned, about 4 minutes. Drain on paper towels, then season lightly with salt. Repeat with the potato, about 3 minutes per side. Repeat with the cauliflower, about 7 minutes per batch. Finally, press the eggplant with paper towel until dry, then fry the eggplant in one layer until browned, about 4 minutes per batch. Drain on paper towels, but don’t season. (If the eggplant is too oily, press on it with paper towels.)
+
+
+Pour out the oil, keeping 2½ tablespoons in the pan. Heat it over medium-high heat and add the vermicelli, stirring until browned, about 2 minutes. Add the drained rice and cook, stirring, to dry it out, about 4 minutes. Add 1 tablespoon salt, ½ teaspoon black pepper, the turmeric, cinnamon, allspice, ground cloves, Sazón and garlic, and cook, stirring, until very fragrant.
+
+
+Place the chicken back in the pot, skin side down. Place the vegetables on top, then rice. Pour in 4 cups of the chicken broth. Press down on the rice; add more broth or water if needed to bring the liquid barely to the level of the rice. Cover the pot and bring to a boil over high heat, then turn it down to medium low. After 10 minutes, carefully stir just the rice to evenly combine the harder rice on top. Repeat after another 10 minutes. After a total of 30 minutes, the rice should be cooked, but not soft, and the liquid should be absorbed.
+
+
+Place a very large serving dish on top of the pot, then, protecting your hands (and maybe with a partner), invert the pot onto the dish in one smooth motion. If there is liquid seeping out, spoon it out or soak it up with paper towels. Let the pot rest at least 5 minutes.
+
+
+Meanwhile, heat 2 tablespoons of oil in a small pan over medium-high heat until shimmering. Fry the pine nuts, stirring constantly, until browned, about 1 minute. Drain on paper towels.
+
+
+Lift off the pot to reveal the maqluba, and scatter the pine nuts all over. Serve with yogurt and chopped tomatoes, cucumbers and parsley on the side, seasoned with lemon, salt and olive oil.     </dd>
+			<dt> Ingredients </dt>
+			<dd> <br> 1
+medium eggplant (1 pound)
+Salt
+3½
+pounds bone-in chicken pieces
+1½
+teaspoons ground black pepper
+1
+teaspoon ground cumin
+6
+cloves
+6
+green cardamom pods
+3
+bay leaves
+2½
+cups long-grain rice, rinsed well and drained
+1
+small onion, cut into large wedges
+Vegetable or olive oil, as needed
+3 to 5
+medium carrots, 2-or-3-inch pieces
+1
+medium potato, ½-inch slices
+½
+medium-head cauliflower, in florets
+¾
+cup broken vermicelli noodles (see note)
+1
+teaspoon ground turmeric
+¾
+teaspoon ground cinnamon
+½
+teaspoon ground allspice
+¼
+teaspoon ground cloves
+½
+teaspoon Goya Sazón seasoning (optional)
+3
+garlic cloves, grated
+⅓
+cup pine nuts
+Plain yogurt, for serving (optional)
+Chopped tomatoes, cucumbers, parsley, lemon juice and olive oil, for serving  </dd>
+			<dt> Customize Ingredients </dt>
+			</dl>
+			</div>
+			<form id="customize">
+            <div>
+            <input type="checkbox" name="Ingredient1" id="ingredient" />
+            <label for="Ingredient">remove pine nuts</label>
+           </div>
+           <div>
+           <input type="checkbox" name="Ingredient2" id="ingredient" />
+           <label for="Ingredient">Extra spicy</label>
+           </div>
+		   <div>
+           <input type="checkbox" name="Ingredient3" id="ingredient" />
+           <label for="Ingredient">remove cinnamon</label>
+           </div>
+		   <div>
+           <input type="checkbox" name="Ingredient4" id="ingredient" />
+           <label for="Ingredient">remove potato</label>
+           </div>
+           <div>
+           <input type="submit" name="Add to cart" value="Add to cart" id="addtocart"/>
+          </div>
+          </form>
+			
+			
+			
+			 <footer>Copyright 2021 - SOSUSHI ! ALL Rights Reserved</footer>
+</body>
+</html>
+
