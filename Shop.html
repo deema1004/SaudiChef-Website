@@ -7,7 +7,7 @@
 
 </head>
 <body id='body'>
-
+<script src="searchbar.js"></script>
     <section class="header">
         <nav class="navbar">
 
@@ -26,10 +26,10 @@
                     <li class="navbar-item active"> <a class="navbar-link" href="Homepage.html">Home</a> </li>
                     <li class="navbar-item"> <a class="navbar-link" href="Shop.html">Shop</a></li>
                     <li class="navbar-item"> <a class="navbar-link" href="html">Cart</a> </li>
-                    <li class="navbar-item"> <div class="header-search"> <input type="text" class="header-search input" placeholder="Search..."> </div></li>
+                    <li class="navbar-item"> <a class="navbar-link" href="adminlogin.html">Log in</a> </li>
+                    <li class="navbar-item"> <div class="header-search"> <input type="text" class="header-search input" placeholder="Search..." id="search-item" onkeyup="search()"> </div></li>
                 </ul>
             </div>
-
         </nav>
 
         <div>
@@ -63,74 +63,100 @@
     <br>
 
 
+				
+			
+<div class="product-list" id="product-list">
     <div class="row">
-       
+           
+		   <div class = "product">
             <div class="card">
                 <img src="images/mataziz.jpg" alt="mataziz" style="width:250px; height: 200px;">
                 <h1>Mataziz</h1>
-                <div> <p class="price">$19.99</p> <button type="button" id="buttonS">Share</button></div>
+                <div> 
+				
+				
+				
+				<p class="price">$19.99</p>
+                <a href="Mataziz.html"   id="buttonS" >View</a>
+				<button type="button" id="buttonS">Share</button></div>
                 
                 <p><button>Add to Cart</button></p>
               </div>
-
-
+</div>
+              		   <div class = "product">
               <div class="card">
                 <img src="images/mantoo.jpg" alt="Mantoo" style="width:250px; height: 200px;">
                 <h1>Mantoo</h1>
-                <div> <p class="price">$19.99</p> <button type="button" id="buttonS">Share</button></div>
+                <div> <p class="price">$19.99</p>
+<a href="Mantoo.html"   id="buttonS" >View</a>				
+<button type="button" id="buttonS">Share</button></div>
                 
                 <p><button>Add to Cart</button></p>
               </div>
-
-
+</div>
+               		   <div class = "product">
               <div class="card">
                 <img src="images/mansaf.jpg" alt="Mansaf" style="width:250px; height: 200px;">
                 <h1>Mansaf</h1>
-                <div> <p class="price">$19.99</p> <button type="button" id="buttonS">Share</button></div>
+                <div> <p class="price">$19.99</p> 
+				<a href="Mansaf.html"   id="buttonS" >View</a>
+				<button type="button" id="buttonS">Share</button></div>
                 
                 <p><button>Add to Cart</button></p>
               </div>
-
-
+</div>
+             		   <div class = "product">
               <div class="card">
                 <img src="images/qorsan.jpg" alt="qorsan" style="width:250px; height: 200px;">
                 <h1>Gursan</h1>
-                <div> <p class="price">$19.99</p> <button type="button" id="buttonS">Share</button></div>
+                <div> <p class="price">$19.99</p> 
+				<a href="Gursan.html"   id="buttonS" >View</a>
+				<button type="button" id="buttonS">Share</button></div>
                 
                 <p><button>Add to Cart</button></p>
               </div>
-
+</div>
+              		   <div class = "product">
               <div class="card">
                 <img src="images/magloba.jpg" alt="magloba" style="width:250px; height: 200px;">
                 <h1>Magloba</h1>
-                <div> <p class="price">$19.99</p> <button type="button"  id="buttonS">Share</button></div>
+                <div> <p class="price">$19.99</p> 
+				<a href="Magloba.html"   id="buttonS" >View</a>
+				<button type="button"  id="buttonS">Share</button></div>
                 
                 <p><button>Add to Cart</button></p>
               </div>
+</div>
 
+		   <div class = "product">
               <div class="card">
                 <img src="images/sayadia2.jpeg" alt="sayadia" style="width:250px; height: 200px;">
                 <h1>Sayadia</h1>
-                <div> <p class="price">$19.99</p> <button type="button" id="buttonS">Share</button></div>
+                <div> <p class="price">$19.99</p> 
+				<a href="Sayadia.html"   id="buttonS" >View</a>
+				<button type="button" id="buttonS">Share</button></div>
                 
                 <p><button>Add to Cart</button></p>
               </div>
-
+</div>
+		   <div class = "product">
               <div class="card">
                 <img src="images/kabsa.GIF" alt="kabsa" style="width:250px; height: 200px;">
                 <h1>Kabsa</h1>
-                <div> <p class="price">$19.99</p> <button type="button" id="buttonS">Share</button></div>
+                <div> <p class="price">$19.99</p> 
+				<a href="Kabsa.html"   id="buttonS" >View</a>
+				<button type="button" id="buttonS">Share</button></div>
                 
                 <p><button>Add to Cart</button></p>
               </div>
-
+</div>
                 
 
              
 
         </div>
     </div>
-
+</div>
 
 
 
@@ -138,5 +164,4 @@
     <footer>Copyright 2021 - SOSUSHI ! ALL Rights Reserved</footer>
 </body>
 </html>
-
 
